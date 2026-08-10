@@ -170,6 +170,11 @@ npm run build
 ### ❌ Pages deployment fails:
 - تحقق من build logs في Cloudflare Pages dashboard
 - تأكد من أن `next.config.ts` لديه `standalone` output
+- إذا كنت تستخدم Wrangler يدويًا، لا تستعمل `npx wrangler deploy`
+- استخدم الأمر الصحيح:
+  ```bash
+  npx wrangler pages deploy .next/standalone --project-name=kbi --branch=main
+  ```
 
 ---
 

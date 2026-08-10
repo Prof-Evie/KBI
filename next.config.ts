@@ -7,10 +7,6 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
-  // Cloudflare Pages optimization
-  experimental: {
-    isrMemoryCacheSize: 0, // استخدم 0 لـ serverless
-  },
   images: {
     unoptimized: true, // Cloudflare لا يدعم image optimization
   },
