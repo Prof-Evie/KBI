@@ -1,0 +1,21 @@
+# Cloudflare Pages Configuration
+name = "kbi"
+type = "javascript"
+compatibility_date = "2024-01-01"
+
+# Build configuration
+[build]
+command = "npm run build"
+cwd = "./"
+
+[build.upload]
+format = "service-worker"
+
+# Environment variables
+[env.production]
+name = "kbi-production"
+route = "kbi.pages.dev"
+
+[env.staging]
+name = "kbi-staging"
+route = "kbi-staging.pages.dev"

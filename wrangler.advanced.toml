@@ -1,0 +1,48 @@
+// Cloudflare wrangler.toml - Configuration Advanced
+// للاستخدام المتقدم
+
+name = "kbi"
+main = "server.js"
+compatibility_date = "2024-08-10"
+type = "javascript"
+
+# تكوين البناء
+[build]
+command = "npm run build"
+cwd = "./"
+
+[env.production]
+name = "kbi-prod"
+routes = [
+  { pattern = "kbi.pages.dev", zone_name = "pages.dev" }
+]
+
+[env.staging]
+name = "kbi-staging"
+routes = [
+  { pattern = "kbi-staging.pages.dev", zone_name = "pages.dev" }
+]
+
+# المتغيرات
+[env.production.vars]
+NODE_ENV = "production"
+LOG_LEVEL = "info"
+
+[env.staging.vars]
+NODE_ENV = "staging"
+LOG_LEVEL = "debug"
+
+# الحدود
+limits = { cpu_second = 50 }
+
+# KV Store (اختياري - للـ caching)
+# [[kv_namespaces]]
+# binding = "KV"
+# id = "your-kv-id"
+# preview_id = "your-preview-kv-id"
+
+# D1 Database (اختياري - بديل SQLite)
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "kbi-db"
+# database_id = "your-database-id"
