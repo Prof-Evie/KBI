@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dependencies
 node_modules
 /.pnp
@@ -63,3 +64,6 @@ db.sqlite-wal
 
 # Cloudflare
 .wrangler
+=======
+node_modules
+>>>>>>> 34435f93 (Setup Cloudflare deployment)

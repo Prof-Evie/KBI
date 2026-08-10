@@ -1,0 +1,25 @@
+# Cloudflare Pages configuration (kept for manual/CLI deploy only)
+# This file is renamed from `wrangler.toml` to avoid Cloudflare Pages
+# automatically running `wrangler deploy` (which expects a Worker entrypoint).
+
+name = "kbi"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "npm run build"
+cwd = "./"
+
+# Site directory for manual `wrangler pages deploy` uploads
+[site]
+bucket = ".next/standalone"
+
+# Optional: keep per-environment metadata if you want to use it manually
+[env.production]
+name = "kbi-production"
+
+[env.staging]
+name = "kbi-staging"
+
+# NOTE:
+# Use the CLI to deploy explicitly:
+# npx wrangler pages deploy .next/standalone --project-name=kbi --branch=main
