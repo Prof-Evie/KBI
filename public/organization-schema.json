@@ -1,0 +1,15 @@
+{
+  "name": "KBI Club",
+  "description": "نادي الكيكبوكسينغ والملاكمة - الموصل، العراق",
+  "url": "https://kbi.mosul.workers.dev",
+  "logo": "https://kbi.mosul.workers.dev/images/IMG_٢٠٢٦٠٨١٠_١٥١٤٤٢.jpg",
+  "sameAs": [
+    "https://www.facebook.com/kbiclub",
+    "https://www.instagram.com/kbiclub"
+  ],
+  "contactPoint": {
+    "contactType": "Customer Service",
+    "telephone": "+964-XXXXXXXXX",
+    "areaServed": "IQ"
+  }
+}
