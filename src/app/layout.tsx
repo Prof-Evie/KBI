@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://kbi.mosul.workers.dev",
   },
+  verification: {
+    google: "google73fa974b042ef280",
+  },
   openGraph: {
     title: "KBI Club | نادي الكيكبوكسينغ - الموصل، العراق",
     description: "انضم إلى أفضل نادي للـ Boxing و Kick-Boxing في الموصل. تدرب مع الكابتن بكر وحقق أهدافك الرياضية.",
@@ -56,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" suppressHydrationWarning>
       <head>
-        <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
+        <meta name="google-site-verification" content="google73fa974b042ef280" />
         <link rel="canonical" href="https://kbi.mosul.workers.dev" />
         <link rel="sitemap" href="/sitemap.xml" />
       </head>
